@@ -19,6 +19,10 @@ export class SRSEvent<ParamType> {
         this.waiters = [];
     }
 
+    reset() {
+        this.isSet = false;
+    }
+
     waitAsync(cb: (name: string, param?: ParamType) => void) {
         if(this.isSet) {
             cb(this.name, this.param);
