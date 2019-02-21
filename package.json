@@ -1,0 +1,14 @@
+{
+  "name": "srs-event",
+  "version": "0.1.1",
+  "description": "A simple asynchornous Set-Reset Event",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "deploy": "run-script-os",
+    "deploy:win32": "powershell -Command deploy.ps1"
+  },
+  "author": "Johannes Pandis",
+  "license": "ISC"
+}
